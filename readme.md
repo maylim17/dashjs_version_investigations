@@ -7,6 +7,11 @@ Quickstart
     - <run_key> eg. `dashjs4.1.2_some_comment`, to be appended to results folder name
     - IMPT: Re-run command for each new test run to create separate log files
 
+1. Run HTTP server w dash.js media files:
+    - `cd server`
+    - `vi config/nginx.conf` and update this line `root /<PATH_TO_MAIN_FOLDER>/server/nginx;` with the correct system directory (use absolute path)
+    - Start nginx: `sudo nginx -c /<PATH_TO_MAIN_FOLDER>/server/nginx/config/nginx.conf`
+
 1. Run dash.js of desired version:
     - v4.3.0
         - `cd dash.js-4.3.0`
